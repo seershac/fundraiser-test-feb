@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundraiser for a Great Cause</title>
+    <title>Ainm an scoil</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,70 +18,135 @@
             padding: 20px;
             text-align: center;
         }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            margin-top: 0;
-        }
-        .donate-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        .donate-button:hover {
-            background-color: #45a049;
+        h1, h2 {
+            color: #4CAF50;
         }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+        .programs, .staff {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .program, .staff-member {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .program img, .staff-member img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Help Us Make a Difference!</h1>
-        <p>Join us in supporting a great cause.</p>
+        <h1>Fáilte chuig Scoil Mhuire</h1>
+        <p>Empowering Students for a Bright Future</p>
     </header>
 
-    <div class="container">
-        <h2>About the Fundraiser</h2>
-        <p>
-            We are raising funds to support [insert cause here, e.g., "local community projects, education for underprivileged children, or disaster relief efforts"]. Every contribution, no matter how small, makes a big impact.
-        </p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#staff">Staff</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <h2>How You Can Help</h2>
-        <p>
-            Your donation will go directly toward [specific use of funds, e.g., "providing meals, building schools, or supplying medical equipment"]. Together, we can make a difference!
-        </p>
+    <div class="container" id="home">
+        <h2>Home</h2>
+        <p>Welcome to School, where we strive to provide a nurturing and innovative learning environment for all students. Our mission is to inspire and empower students to achieve their full potential.</p>
+    </div>
 
-        <a href="#" class="donate-button">Donate Now</a>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>This School has been a cornerstone of the community for over 50 years. We offer a wide range of academic and extracurricular programs designed to prepare students for success in college and beyond.</p>
+    </div>
 
-        <h2>Our Progress</h2>
-        <p>
-            <strong>Goal:</strong> $10,000<br>
-            <strong>Raised so far:</strong> $4,500
-        </p>
-        <div style="background-color: #e0e0e0; border-radius: 5px; height: 20px;">
-            <div style="background-color: #4CAF50; width: 45%; border-radius: 5px; height: 100%;"></div>
+    <div class="container" id="programs">
+        <h2>Our Programs</h2>
+        <div class="programs">
+            <div class="program">
+                <img src="https://via.placeholder.com/150" alt="STEM Program">
+                <h3>STEM Program</h3>
+                <p>Our STEM program focuses on Science, Technology, Engineering, and Mathematics to prepare students for future careers.</p>
+            </div>
+            <div class="program">
+                <img src="https://via.placeholder.com/150" alt="Arts Program">
+                <h3>Arts Program</h3>
+                <p>Our Arts program encourages creativity and self-expression through music, theater, and visual arts.</p>
+            </div>
+            <div class="program">
+                <img src="https://via.placeholder.com/150" alt="Sports Program">
+                <h3>Sports Program</h3>
+                <p>Our Sports program promotes teamwork, discipline, and physical fitness through a variety of athletic activities.</p>
+            </div>
         </div>
     </div>
 
+    <div class="container" id="staff">
+        <h2>Our Staff</h2>
+        <div class="staff">
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/150" alt="Principal">
+                <h3>Mr. John Doe</h3>
+                <p>Principal</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/150" alt="Vice Principal">
+                <h3>Ms. Jane Smith</h3>
+                <p>Vice Principal</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://via.placeholder.com/150" alt="Head of Academics">
+                <h3>Dr. Emily Brown</h3>
+                <p>Head of Academics</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to visit our school, please reach out to us:</p>
+        <p><strong>Address:</strong> 123 School Lane, Greenwood, USA</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@greenwoodhigh.edu</p>
+    </div>
+
     <footer>
-        <p>&copy; 2023 Fundraiser Name. All rights reserved.</p>
+        <p>&copy; 2023 Greenwood High School. All rights reserved.</p>
     </footer>
 </body>
 </html>

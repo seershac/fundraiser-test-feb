@@ -69,14 +69,44 @@
             max-width: 100%;
             height: auto;
         }
+        /* Basic styling for the container */
+        .image-container {
+            text-align: center; /* Center-align the content */
+            margin: 20px auto; /* Add some margin */
+            max-width: 600px; /* Limit the width of the container */
+        }
+
+        /* Styling for the image */
+        .image-container img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+
+        /* Styling for the header */
+        .image-container h1 {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin-bottom: 10px; /* Space below the header */
+        }
     </style>
 </head>
 <body>
-    <header>
+    <div class="image-container">
+        <!-- Header above the image -->
         <h1>Fáilte chuig Scoil Naomh Pádraig, Clochbhreac</h1>
+
+        <!-- Image -->
+        <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/7FC3/production/_103370723_884140874-170667a.jpg.webp" alt="Example Image Description">
+
+        <!-- Optional: Header below the image -->
+        <!-- <h1>Another Header Below the Image</h1> -->
+    </div>
+    <header>
+       <!-- <h1>Fáilte chuig Scoil Naomh Pádraig, Clochbhreac</h1>
         <p>Scoil Naomh Pádraig, An Chlochbhreac</p>
         <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/7FC3/production/_103370723_884140874-170667a.jpg.webp" alt="STEM Program">
-    </header>
+   --> </header>
 
     <nav>
         <a href="#home">Baile</a>
